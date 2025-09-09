@@ -20,7 +20,7 @@ m = 3
 locs = np.random.uniform(0, 1, (N, 2)).astype(np.float32)
 demands = np.random.randint(1, 9, (N, )).astype(np.int32)
 demands[0] = 0
-capacity = demands.sum()
+capacity = int(demands.sum() / m)
 
 print(mmcvrp_solver(locs, demands, capacity, m))
 ```
