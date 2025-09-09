@@ -1,5 +1,7 @@
 It is a python binder to solve minmax CVRP with small number of demands (n < 25).
 
+**You may want to change the line 5 in CMakeLists.txt to use a different version of python/pybind11.**
+
 Usage:
 
 1. `mkdir build && cd build`
